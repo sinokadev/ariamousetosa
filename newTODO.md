@@ -6,5 +6,5 @@ This fork will feature several changes:
 
 1. ~~Use CMake instead of Sconstruct~~
 2. Switch to Qt instead of wx (if possible)
-3. Code modernization
+3. Code modernization (partially completed)
 4. Unify input and editing tools

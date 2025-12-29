@@ -19,7 +19,7 @@
 #include "Midi/MeasureData.h"
 #include "Midi/Sequence.h"
 #include "Midi/Track.h"
-#include "PrintLayoutMeasure.h"
+#include "Printing/SymbolPrinter/PrintLayout/PrintLayoutMeasure.h"
 
 #include "Printing/SymbolPrinter/PrintLayout/PrintLayoutAbstract.h"
 

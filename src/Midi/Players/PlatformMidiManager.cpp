@@ -27,8 +27,13 @@
 #include <wx/msgdlg.h>
 
 #include "RtMidi.h"
+#include <exception>
+#include <wx/log.h>
+
 
 using namespace AriaMaestosa;
+using rt::midi::RtMidiIn;
+using rt::midi::RtMidiError;
 
 ptr_vector<PlatformMidiManagerFactory, REF>* g_all_midi_managers = NULL;
 PlatformMidiManager* g_manager = NULL;
@@ -127,9 +132,9 @@ wxArrayString PlatformMidiManager::getInputChoices()
         {
             portName = midiin->getPortName(i);
         }
-        catch (RtError &error)
+        catch (const std::exception& e)
         {
-            error.printMessage();
+            wxLogWarning("RtMidi error: %s", e.what());
             continue;
         }
         std::cout << "  Input Port #" << i+1 << ": " << portName << '\n';
@@ -300,9 +305,9 @@ bool PlatformMidiManager::startRecording(wxString outputPort, Track* target)
         {
             portName = m_midi_input->getPortName(i);
         }
-        catch (RtError &error)
+        catch (const std::exception& e)
         {
-            error.printMessage();
+            wxLogWarning("RtMidi error: %s", e.what());
             continue;
         }
         

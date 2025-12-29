@@ -171,9 +171,13 @@ else()
 
   # Aria에 연결
   target_link_libraries(Aria PRIVATE irrxml)
-  target_include_directories(Aria PRIVATE
-    "${IRRXML_INCLUDE_ROOT}"
+  target_include_directories(Aria
+    PRIVATE
+      ${CMAKE_SOURCE_DIR}/src
+    PUBLIC
+      ${CMAKE_SOURCE_DIR}/include
   )
+
 endif()
 
 

@@ -295,7 +295,6 @@ void CustomToolBar::realize()
 {
     if (m_is_realized)
     {
-        toolbarSizer->RecalcSizes();
         toolbarSizer->Layout();
         return;
     }

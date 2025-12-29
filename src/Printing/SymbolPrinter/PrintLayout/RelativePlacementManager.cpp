@@ -14,7 +14,7 @@
  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include "RelativePlacementManager.h"
+#include "Printing/SymbolPrinter/PrintLayout/RelativePlacementManager.h"
 
 #include "AriaCore.h"
 #include "UnitTest.h"

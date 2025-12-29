@@ -27,7 +27,14 @@
 #include "ptr_vector.h"
 #include "Utils.h"
 
-class RtMidiIn;
+#include "RtMidi.h"
+
+namespace rt {
+  namespace midi {
+    class RtMidiIn;
+  }
+}
+
 
 namespace AriaMaestosa
 {
@@ -64,7 +71,7 @@ namespace AriaMaestosa
     {
     protected:
         bool m_recording;
-        RtMidiIn* m_midi_input;
+        rt::midi::RtMidiIn* m_midi_input;
         
         struct NoteInfo
         {

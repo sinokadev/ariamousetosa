@@ -1,6 +1,6 @@
 #ifdef RENDERER_WXWIDGETS
 
-#include "wxDCString.h"
+#include "Renderers/wxDCString.h"
 #include "Utils.h"
 
 #include <wx/dc.h>
