@@ -288,8 +288,8 @@ def compile_Aria(which_os):
                 else:
                     env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,gl,net'])
             else:
-                env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net'])
-                # env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,webview'])
+                # env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net'])
+                env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,webview'])
         else:
             if renderer == "opengl":
                 env.ParseConfig( [WXCONFIG] + ['--cppflags','--libs','core,base,adv,net,gl'])
