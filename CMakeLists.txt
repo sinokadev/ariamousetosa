@@ -42,7 +42,7 @@ find_package(wxWidgets REQUIRED COMPONENTS core base adv net webview)
 include(${wxWidgets_USE_FILE})
 target_link_libraries(Aria PRIVATE ${wxWidgets_LIBRARIES})
 
-# ---- IrrXML / Irrlicht (AriaFileWriter에서 사용) ----
+# ---- IrrXML / Irrlicht  ----
 find_library(IRRLICHT_LIB Irrlicht)
 if(IRRLICHT_LIB)
   target_link_libraries(Aria PRIVATE ${IRRLICHT_LIB})
@@ -104,7 +104,7 @@ elseif(UNIX)
   endif()
 endif()
 
-# JACK (요청 시)
+# JACK
 if(USE_JACK)
   add_compile_definitions(USE_JACK)
   find_library(JACK_LIB jack)
