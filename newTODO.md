@@ -1,6 +1,6 @@
 # The Aria Mousetosa
 
-Aria Maestosa was a very useful and good program. However, the project was discontinued four years ago, the code is outdated, and it has some inconvenient features. I used the program frequently, so I found this disappointing. That's why I created this fork.
+Aria Maestosa was a very useful and good program. However, the project was discontinued four years ago, the code is outdated, and it has some inconvenient features. I used the program frequently, so I found this disappointing. That is why I created this fork.
 
 This fork will feature several changes:
 
